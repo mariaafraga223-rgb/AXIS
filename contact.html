@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>axis — Contact</title>
+  <meta name="description" content="Get in touch with María Fraga Alonso." />
+  <link rel="preload" href="fonts/PPTelegraf-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/SeasonSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=16" />
+</head>
+<body data-page="contact">
+
+  <header id="site-header"></header>
+
+  <main>
+    <!-- intro -->
+    <section class="section about page-top" id="contact-top">
+      <div class="container">
+        <div class="about__grid reveal">
+          <h1 class="about__label" data-i18n="ct.label">Contact</h1>
+          <div>
+            <p class="about__text" data-i18n="ct.intro">Let’s talk — tell me about your project, or just say hi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- direct links + form -->
+    <section class="section contact" id="contact">
+      <span class="sec-num">/02</span>
+      <div class="container contact__grid">
+        <div class="contact__direct reveal">
+          <h2 class="eyebrow" data-i18n="ct.directlabel">Reach me directly</h2>
+          <ul class="contact__links">
+            <li><a class="link-cta" href="https://wa.me/34674209788" target="_blank" rel="noopener">WhatsApp <span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a class="link-cta" href="https://www.behance.net/mariafraga3" target="_blank" rel="noopener">Behance <span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a class="link-cta" href="https://es.linkedin.com/in/maría-fraga-alonso-6b1128278/es" target="_blank" rel="noopener">LinkedIn <span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a class="link-cta" href="https://www.instagram.com/bymariafraga" target="_blank" rel="noopener">Instagram <span class="arrow" aria-hidden="true">→</span></a></li>
+          </ul>
+        </div>
+
+        <div class="contact__formwrap reveal">
+          <h2 class="eyebrow" data-i18n="ct.formlabel">Send a message</h2>
+          <form id="contact-form" class="form">
+            <div class="field">
+              <label for="cf-name" data-i18n="ct.name">Name</label>
+              <input id="cf-name" name="name" type="text" required placeholder="Your name" data-i18n-ph="ct.namePh" />
+            </div>
+            <div class="field">
+              <label for="cf-email" data-i18n="ct.email">Email</label>
+              <input id="cf-email" name="email" type="email" required placeholder="you@email.com" data-i18n-ph="ct.emailPh" />
+            </div>
+            <div class="field">
+              <label for="cf-msg" data-i18n="ct.msg">Message</label>
+              <textarea id="cf-msg" name="message" rows="5" required placeholder="What would you like to talk about?" data-i18n-ph="ct.msgPh"></textarea>
+            </div>
+            <button class="btn" type="submit"><span data-i18n="ct.send">Send message</span><span class="arrow" aria-hidden="true">→</span></button>
+          </form>
+          <p id="contact-sent" class="contact__sent" hidden data-i18n="ct.sent">Thanks — your message has been sent.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/script.js?v=16"></script>
+</body>
+</html>
