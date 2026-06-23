@@ -5,7 +5,7 @@
 
 /* ---------- 0. Config del sitio ---------- */
 const SITE = {
-  prototype: "https://www.figma.com/design/AIfOQhoTMu2t0PU6HZ3LBQ/AXIS---Wireframes?node-id=1085-4905",
+  prototype: "https://www.figma.com/proto/AIfOQhoTMu2t0PU6HZ3LBQ/AXIS?node-id=1085-5178&t=FnMb1fi6BWgk1GdY-1",
   whatsapp:  "https://wa.me/34674209788",
   portfolio: "https://bymariafraga.myportfolio.com",
   socials: {

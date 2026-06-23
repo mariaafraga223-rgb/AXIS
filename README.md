@@ -6,7 +6,7 @@ Landing web del Trabajo de Fin de Grado **Axis** — un sistema que ayuda a dise
 Autora: María Fraga Alonso · Tutor: David Alonso Urbano
 
 → [Ver la web](https://mariaafraga223-rgb.github.io/AXIS/)  
-→ [Ver el prototipo en Figma](https://www.figma.com/design/AIfOQhoTMu2t0PU6HZ3LBQ/AXIS---Wireframes?node-id=1085-4905)
+→ [Ver el prototipo en Figma](https://www.figma.com/proto/AIfOQhoTMu2t0PU6HZ3LBQ/AXIS?node-id=1085-5178&t=FnMb1fi6BWgk1GdY-1)
 
 ---
 
