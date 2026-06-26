@@ -44,7 +44,7 @@ const I18N = {
     "ct.sent": "Thanks, your message has been sent.",
 
     "hero.tagline": "Design with direction.",
-    "hero.l1": "AI will <em>not</em> replace you.",
+    "hero.l1": "AI will <em>not</em> replace you,",
     "hero.l2": "at least if you don’t let it.",
     "hero.sub": "Axis helps designers integrate AI into their creative process, with direction, structure and criteria.",
     "hero.cta_secondary": "See how it works",
@@ -147,7 +147,7 @@ const I18N = {
     "ct.sent": "¡Gracias! Tu mensaje fue enviado.",
 
     "hero.tagline": "Design with direction.",
-    "hero.l1": "La IA <em>no</em> te va a reemplazar.",
+    "hero.l1": "La IA <em>no</em> te va a reemplazar,",
     "hero.l2": "A menos que se lo permitas.",
     "hero.sub": "Axis te ayuda a integrar la IA en tu proceso creativo, con dirección, estructura y criterio.",
     "hero.cta_secondary": "Ver cómo funciona",
