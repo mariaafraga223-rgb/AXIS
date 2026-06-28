@@ -229,13 +229,12 @@ ul { list-style: none; }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.5em;
-  font-family: var(--font-display);
-  font-size: var(--t-heading);
-  letter-spacing: 0.02em;
 }
-.brand__mark { width: 22px; height: 22px; }
-.brand__name { line-height: 1; }
+.brand__logo {
+  display: block;
+  height: 18px;    /* altura fija; el ancho escala con el viewBox 147.83/50.6 ≈ 2.92× */
+  width: auto;
+}
 
 /* Nav central-derecha */
 .site-nav { display: none; }
@@ -645,7 +644,7 @@ body[data-page="home"] .site-header.on-hero {
   .story { border-left: none; border-top: var(--hairline) solid rgba(0,0,0,0.14); }
 }
 
-/* Fondo degradado líquido que se revela en hover */
+/* Fluid canvas background — slides up on hover, revealed by JS animation */
 .story__bg {
   position: absolute; inset: 0; z-index: -1;
   background: #000105;
@@ -653,49 +652,20 @@ body[data-page="home"] .site-header.on-hero {
   transition: transform .55s var(--ease);
   overflow: hidden;
 }
+/* Pseudo-elements and diagonal stripe removed — replaced by .story__canvas */
 .story__bg::before,
-.story__bg::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(45px);
-  opacity: 0;
-  transition: opacity .55s var(--ease);
-  will-change: transform, opacity;
-}
-.story__bg::before {
-  width: 90%; height: 90%;
-  top: -30%; left: -20%;
-  background: radial-gradient(ellipse, rgba(0,64,196,0.82) 0%, transparent 68%);
-  animation: cardBlobL 7s ease-in-out infinite alternate;
-}
-.story__bg::after {
-  width: 90%; height: 90%;
-  bottom: -30%; right: -20%;
-  background: radial-gradient(ellipse, rgba(216,92,58,0.82) 0%, transparent 68%);
-  animation: cardBlobR 9s ease-in-out infinite alternate;
-}
-@keyframes cardBlobL {
-  from { transform: translate(0%, 0%); }
-  to   { transform: translate(25%, 45%); }
-}
-@keyframes cardBlobR {
-  from { transform: translate(0%, 0%); }
-  to   { transform: translate(-25%, -40%); }
-}
-.story__motif {
+.story__bg::after { content: none; }
+.story__motif     { display: none; }
+
+/* Canvas rendered by card-flow.js */
+.story__canvas {
   position: absolute; inset: 0;
-  background:
-    repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0 1px, transparent 1px 24px);
-  opacity: 0;
-  transition: opacity .5s var(--ease);
-  z-index: 1;
+  width: 100%; height: 100%;
+  display: block;
+  pointer-events: none;
 }
+
 .story:hover .story__bg { transform: translateY(0); }
-.story:hover .story__bg::before,
-.story:hover .story__bg::after { opacity: 1; }
-.story:hover .story__motif { opacity: 1; animation: motifDrift 7s linear infinite; }
-@keyframes motifDrift { to { background-position: 240px 240px; } }
 
 /* Glyph del logo arriba-derecha en hover*/
 .story__mark {
